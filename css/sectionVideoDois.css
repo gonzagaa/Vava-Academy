@@ -1,0 +1,139 @@
+#videoDois {
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-black);
+}
+
+#videoDois .wrapper {
+    position: relative;
+}
+
+#videoDois .blush {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#B34101, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -25rem;
+    left: -25rem;
+    opacity: .2;
+
+    animation: moveblush infinite 4s linear;
+}
+
+#videoDois .blush.dois {
+  background: radial-gradient(#B34101, transparent 50%);
+  top: initial;
+  left: initial;
+  bottom: -10rem;
+  right: -25rem;
+}
+
+#videoDois .div-video {
+    z-index: 10;
+}
+
+#videoDois iframe {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    border-radius: 1.4rem;
+}
+
+#videoDois .div-video::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102.2%;
+    border-radius: 1.3rem;
+
+    background: var(--gradient);
+    animation: gradient 1s ease infinite;
+    background-size: 150% 150%;
+}
+
+#videoDois .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#videoDois .text h2 {
+    color: var(--color-text);
+    font-weight: 900;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1.3;
+    font-size: 3.5rem;
+
+    margin-bottom: 5rem;
+
+    position: relative;
+
+    width: max-content;
+}
+
+#videoDois .text h2::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #91ff0000 0%, #f96c00 50%, #91ff0000 100%); 
+}
+
+@media (min-width: 1080px) {
+    section#videoDois .blush {
+        width: 1000px;
+        height: 1000px;
+        top: -25rem;
+        left: -25rem;
+    }
+    
+    section#videoDois .blush.dois {
+        top: initial;
+        left: initial;
+        bottom: -25rem;
+        right: -25rem;
+    }
+
+    section#videoDois .wrapper {
+        padding-inline: 14rem;
+    }
+
+    section#videoDois iframe {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 1.4rem;
+    }
+
+    section#videoDois .div-video::before {
+        border-radius: 1.2rem;
+        width: 100.5%;
+        height: 101%;
+    }
+
+    section#videoDois .text h2 {
+        font-size: 5rem;
+        margin-bottom: 7rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    section#videoDois iframe {
+        border-radius: 1.4rem;
+    }
+
+    section#videoDois .div-video::before {
+        border-radius: 1.4rem;
+        width: 100.5%;
+        height: 101%;
+    }
+}

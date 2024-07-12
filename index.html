@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Academy</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="https://kit.fontawesome.com/40e1b7901b.js" crossorigin="anonymous"></script>
+</head>
+<body class="smooth-scroll-wrapper">
+    
+    <nav id="navigation" class="">
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img  src="./assets/Vava Academy [letreiro].png" alt="Logo">
+            </a>
+            
+            <div class="menu">
+
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">O que você vai aprender</a></li>
+                    <li><a onclick="closeMenu()" href="#time">Feedbacks</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">Planos</a></li>
+                </ul>
+
+                <div class="buttons">
+                    <a onclick="closeMenu()" class="button" href="#contato"><button>
+                        LOG IN
+                    </button></a>
+
+                    <a onclick="closeMenu()" class="button" href="#contato"><button>
+                        COMEÇAR HOJE 
+                    </button></a>
+                </div>
+ 
+                 <ul class="social-links">
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M17.73 6.27V1.5H16.73C14.7124 1.5132 12.782 2.32396 11.36 3.75531C9.93804 5.18665 9.13998 7.12238 9.14002 9.14V10.09H6.27002V13.91H9.14002V22.5H13.91V13.91H16.77V10.09H13.91V9.14C13.9087 8.76358 13.9817 8.3906 14.1248 8.04245C14.268 7.69431 14.4784 7.37784 14.7442 7.11121C15.0099 6.84457 15.3256 6.63301 15.6732 6.48866C16.0209 6.3443 16.3936 6.27 16.77 6.27H17.73Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+ 
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g clip-path="url(#clip0_273_69)">
+                                 <path d="M18.68 1.5H5.32C3.21027 1.5 1.5 3.21027 1.5 5.32V18.68C1.5 20.7897 3.21027 22.5 5.32 22.5H18.68C20.7897 22.5 22.5 20.7897 22.5 18.68V5.32C22.5 3.21027 20.7897 1.5 18.68 1.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M12 16.77C14.6344 16.77 16.77 14.6344 16.77 12C16.77 9.36558 14.6344 7.22998 12 7.22998C9.36558 7.22998 7.22998 9.36558 7.22998 12C7.22998 14.6344 9.36558 16.77 12 16.77Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M18.2 7.23012C18.9898 7.23012 19.63 6.58988 19.63 5.80012C19.63 5.01035 18.9898 4.37012 18.2 4.37012C17.4103 4.37012 16.77 5.01035 16.77 5.80012C16.77 6.58988 17.4103 7.23012 18.2 7.23012Z" fill="white"/>
+                                 </g>
+                                 <defs>
+                                 <clipPath id="clip0_273_69">
+                                 <rect width="24" height="24" fill="white"/>
+                                 </clipPath>
+                                 </defs>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+ 
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M23 1H1V22.04H23V1Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M10.5701 18.2199V11.9999C10.5688 11.5604 10.6542 11.1251 10.8214 10.7187C10.9887 10.3123 11.2345 9.94291 11.5448 9.6317C11.8551 9.32049 12.2237 9.07357 12.6296 8.9051C13.0355 8.73662 13.4706 8.6499 13.9101 8.6499C14.7986 8.6499 15.6506 9.00285 16.2789 9.63109C16.9071 10.2593 17.2601 11.1114 17.2601 11.9999V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M6.73999 7.68994V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M10.5701 7.68994V12.4799" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+                 </ul>
+ 
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>       
+    </nav>
+
+    <header class="header" id="home">
+        <div class="blush um"></div>
+        <div class="blush dois"></div>
+                
+        <div class="wrapper">
+           <div class="content">
+              <div class="text">
+                    <h1>SUA GAMEPLAY CRIMINOSA TEM CURA, <span>RELAXA</span>!</h1>
+                    <p>Tenha um radiante particular para te analisar e te acompanhar no jogo, montando rotinas de treino e te mostrando o que você não vê!</p>
+                    <div class="buttons">
+                    <a href="#">
+                        <button>COMEÇAR HOJE</button>
+                    </a>
+    
+                    <a href="#">
+                        <button>SABER MAIS</button>
+                    </a>
+                    </div>
+              </div>
+            </div>
+        </div>
+              <div class="image">
+                <video class="desktop" autoplay muted loop playsinline>
+                    <source src="./assets/home desktop_1.webm">
+                </video>
+
+                <video class="mobile" autoplay muted loop playsinline>
+                    <source src="./assets/3d home cell.webm">
+                </video>
+              </div>
+    </header>
+
+    <section id="slide">
+        <div class="slide">
+            <div class="slide-text">
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+            </div>
+            <div class="slide-text">
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            </div> 
+        <div class="wrapper">
+           <div class="content">
+                <div class="div-video" style="position:relative; padding-bottom:56.250%">
+                    <iframe allow="fullscreen" allowfullscreen src="https://player-vz-c12ca75d-b2e.tv.pandavideo.com.br/embed/?v=1d6e4596-df86-4eda-8824-66a2efc15337" style="border:none; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                </div>
+
+                <div class="text">
+                    <h2>APRENDA O MESMO SEGREDO QUE OS PROPLAYERS USARAM PARA EVOLUIR NO VALORANT CLICANDO NO BOTÃO ABAIXO</h2>
+                    <a href="#">
+                        <button>QUERO EVOLUIR</button>
+                    </a>
+                </div>
+           </div>
+
+           <div class="blush um"></div>
+            <div class="blush dois"></div>
+        </div>
+    </section>
+
+    <section id="modulos">
+        <div class="slide-content">
+            <div class="slide um">
+                <img src="./assets/agentes/ASTRA.webp" alt="">
+                <img src="./assets/agentes/breach.webp" alt="">
+                <img src="./assets/agentes/BRIM.webp" alt="">
+                <img src="./assets/agentes/cypher.webp" alt="">
+                <img src="./assets/agentes/chamber.webp" alt="">
+                <img src="./assets/agentes/deadlock.webp" alt="">
+                <img src="./assets/agentes/fade.webp" alt="">
+                <img src="./assets/agentes/gekko.webp" alt="">
+                <img src="./assets/agentes/HARBOR.webp" alt="">
+                <img src="./assets/agentes/killjoy.webp" alt="">
+                <img src="./assets/agentes/JETT.webp" alt="">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="content">
+                <h2><span>O</span> QUE VOCÊ IRÁ APRENDER<span>?</span></h2>
+                <div class="cards">
+                    <div class="card-container">
+                        <img class="icone um" src="./assets/icones/academy.png" alt="">
+                        <div class="card">
+                            <h3>ACADEMY</h3>
+                            <p>Aprenda o Básico do Valorant para não ser Newba</p>
+                        </div>
+                    </div>
+ 
+                    <div class="card-container">
+                        <img class="icone dois" src="./assets/icones/mapas.png" alt="">
+                        <div class="card">
+                            <h3>MAPAS</h3>
+                            <p>Deixe de ter uma noção de pombo, aprenda jogar todos os mapas do jogo!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <img class="icone tres" src="./assets/icones/agentes.png" alt="">
+                        <div class="card">
+                            <h3>AGENTES</h3>
+                            <p>Pare de ser cone no jogo, aprenda todas as funções e agentes do Valorant</p>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <img class="icone quatro" src="./assets/icones/radiante.png" alt="">
+                        <div class="card">
+                            <h3>RADIANTE PARTICULAR</h3>
+                            <p>Com um radiante disponível 24h para montar suas rotinas de treino e tirar dúvidas, é impossível não evoluir!</p>
+                        </div>
+                    </div>
+
+                    <div class="blush"></div>
+                </div>            
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <div class="slide dois">
+                <img src="./assets/agentes/kayo.webp" alt="">
+                <img src="./assets/agentes/NEON.webp" alt="">
+                <img src="./assets/agentes/OMEN.webp" alt="">
+                <img src="./assets/agentes/PHOENIX.webp" alt="">
+                <img src="./assets/agentes/REYNA.webp" alt="">
+                <img src="./assets/agentes/RAZE.webp" alt="">
+                <img src="./assets/agentes/sage.webp" alt="">
+                <img src="./assets/agentes/skye.webp" alt="">
+                <img src="./assets/agentes/sova.webp" alt="">
+                <img src="./assets/agentes/VIPER.webp" alt="">
+                <img src="./assets/agentes/YORU.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+            <div class="content">
+                <div class="wrapper header">
+                    <header>
+                        <h2>SUBA DE ELO <span>5X</span> MAIS <span>RÁPIDO</span></h2>
+                        <p>Veja o que a galera está falando:</p>
+                    </header>
+                </div>
+
+                <div class="wrapper carrossel">
+                    <div class="swiper mySwiper3">
+                        <div class="cards swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Brutal - Sova (Bahia).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/brutal.avif" alt="">
+                                    <div class="info">
+                                        <h3>Brutal</h3>
+                                        <p>@brutal</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Quem é Forsaken?</h3>
+                                    <p>Modestia à parte, depois de ter um coach especial de sova, não tem um jogo que eu não amasso com esse boneco, se me encontrar nas rankeds, já sabe né?</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Platinum_1_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img class="dois" src="./assets/ranks/Immortal_2_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Coutinho - KillJoy (RJ).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/coutinho.avif" alt="">
+                                    <div class="info">
+                                        <h3>Coutinho</h3>
+                                        <p>@coutinho_fps</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Me apaixonei!!</h3>
+                                    <p>A todo momento me senti próximo do projeto, o dono sempre conosco em call me fez sentir que estava em um lugar especial, feito para pessoas especiais kkkk, hoje eu sou até ADM do server...</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Platinum_2_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Immortal_3_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Gz - Jett (Sulista).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/tornado.avif" alt="">
+                                    <div class="info">
+                                        <h3>Gztornado</h3>
+                                        <p>@Maziinhoo</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Do DIMA ao IMORTAL 2!</h3>
+                                    <p>Estava inseguro no começo, achei que não era pra mim, mas em 7 meses eu sai de um diamante falido para o imortal 2! Sem o suporte que tive isso seria impossível...</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Diamond_1_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Immortal_2_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Hydralk - Astra (Curitiba).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/hydralk.avif" alt="">
+                                    <div class="info">
+                                        <h3>Hydralk</h3>
+                                        <p>@shdhydralk</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Eu era pesado demais!</h3>
+                                    <p>Só sabia atirar agachado, isso me deixou preso no diamante por séculos, depois das minhas análises eu comecei a masterizar o A & D, aberturinha, minha mira ficou muito ciclete, hoje tenho confiança de trocar contra qualquer um...</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Iron_1_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Diamond_3_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Mascaro - Cypher (SP).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/mascaro.avif" alt="">
+                                    <div class="info">
+                                        <h3>Mascaro</h3>
+                                        <p>@jvmascaro</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Sem tempo pra jogar!</h3>
+                                    <p>Eu devo ter sido o cara que mais fez análise nesse curso! E mesmo tendo pouquíssimo tempo para jogar por conta da facul ainda consegui pegar Ascendente, devo isso a minha rotina personalizada...</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Platinum_2_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Ascendant_3_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Ricardin - Skye (SP - Zone Leste).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/ricardin.avif" alt="">
+                                    <div class="info">
+                                        <h3>RicarDinn</h3>
+                                        <p>@ricardinn</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>A Melhor Comunidade!</h3>
+                                    <p>Fui do prata ao imortal como um foguete! Devo muito disso a galera que conheci aqui, jogar sempre com pessoas que tinham um nível acima do meu mudou minha gameplay da água para o vinho...</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Silver_1_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Immortal_1_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+ 
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Rizzato - Reyna (Floripa).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/rizzato.avif" alt="">
+                                    <div class="info">
+                                        <h3>Rizzato</h3>
+                                        <p>@jv.rizzato</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>O tapinha que eu precisava!</h3>
+                                    <p>Vim do Cs, dava umas balinhas mas senti que faltava o molho do vavá para ser um radiante sólido, foi papo de umas duas vods eu já estava dando umas balinhas no radidi, tenho até aula na plataforma, pai tem uma das melhores miras do server tá? 😎</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Immortal_1_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Radiant_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Sensassão - Neon (SP - Zona Sul).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/sansao.avif" alt="">
+                                    <div class="info">
+                                        <h3>Sensassao</h3>
+                                        <p>@Zzapuvlr</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Eu já era bom!</h3>
+                                    <p>Eu já era bom! De jogar fora kkk, posso dizer com orgulho que cheguei ao imortal 3 depois que cheguei no Vavá Academy, muitos me chamam de troll mas eu sou a melhor neon do server, chora #Guigz</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Diamond_3_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Immortal_3_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Soares - Iso (DF).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/soares.avif" alt="">
+                                    <div class="info">
+                                        <h3>Soares</h3>
+                                        <p>@soaresl2l2</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Mira cansada!</h3>
+                                    <p>Eu era o puro estrume jogando esse jogo, só precisei trocar meu mousepad e mouse com uma rotininha insana de mira do meu professor pra pegar imortal</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Ascendant_3_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Immortal_3_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="card swiper-slide">
+                                <img class="agente" src="./assets/alunos/Zerow - Raze (Bahia).webp" alt="">
+        
+                                <div class="head">
+                                    <img class="perfil" src="./assets/alunos perfil/zerow.avif" alt="">
+                                    <div class="info">
+                                        <h3>Zerow</h3>
+                                        <p>@ZeroW_26</p>
+                                    </div>
+                                </div>
+        
+                                <div class="text">
+                                    <h3>Maior farmador de Camps</h3>
+                                    <p>Eu cheguei pra evoluir e acabei fazendo muitos amigos que vou levar pra vida toda! Sem contar que cansei de ganhar todos os camps, vê se entra aí pra dar uma dificultada que está fácil demais! 😘</p>
+                                    <div class="rank">
+                                        <img src="./assets/ranks/Gold_3_Rank.png" alt="">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        <img src="./assets/ranks/Ascendant_3_Rank.png" alt="">
+                                    </div>
+                                </div>
+                            </div>  
+                    </div>
+                </div>
+                
+                </div>
+    </section>
+
+    <section id="animacao">
+        <video class="desktop" autoplay muted loop playsinline>
+            <source src="./assets/Vava Academy vs Neverest.webm">
+        </video>
+        <div class="wrapper">
+            <div class="text">
+                <h2>FAÇA SUA ESCOLHA!</h2>
+                <p>Você merece mais do que ser apenas um número, abandonado em uma plataforma sem suporte! Com o Vavá Academy você terá um acompanhamento diferenciado de um Radiante para alcançar o nível mais alto do jogo.</p>
+                <a href="#"><button>QUERO EVOLUIR</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="videoDois">
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            </div> 
+        <div class="wrapper">
+           <div class="content">
+                <div class="text">
+                    <h2>VEJA MAIS</h2>
+                </div>
+
+                <div class="div-video" style="position:relative;padding-top:56.25%;">
+                    <iframe id="panda-77647db2-702a-4648-ad2d-1ad39d89f4fb" src="https://player-vz-c12ca75d-b2e.tv.pandavideo.com.br/embed/?v=77647db2-702a-4648-ad2d-1ad39d89f4fb" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true fetchpriority="high"></iframe>
+                </div>
+           </div>
+
+           <div class="blush um"></div>
+            <div class="blush dois"></div>
+        </div>
+    </section>
+
+    <section id="plano">
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+         
+        <div class="wrapper">
+            <div class="content">
+                <video class="desktop" autoplay muted loop playsinline>
+                    <source src="./assets/LOOP.mp4">
+                </video>
+
+                <div class="text">
+                    <h2>PLANO <span>ANUAL</span></h2>
+
+                    <div class="topics">
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Radiante <span>particular</span></p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Plataforma com <span>conteúdos insanos</span></p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Comunidade <span>ativa</span> de alunos</p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Tratamento de <span>rei</span></p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Cursos <span>exclusivos</span></p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Campeonatos</p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Servidores de RP do <span>Vavá Academy</span></p>
+                        <p><ion-icon name="checkmark-done-outline"></ion-icon> Suporte especial para se introduzir ao competitivo do jogo e desenvolver uma carreira no Valorant</p>
+                    </div>
+
+                    <div class="price">
+                        <p>DE R$297,90 POR <span>APENAS</span>:</p>
+                        <h3><span>12X</span> DE R$19,70</h3>
+                        <h4>É APENAS R$0,65 POR DIA</h4>
+                    </div>
+
+                    <a href="#"><button>QUERO EVOLUIR</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="slide">
+        <div class="slide">
+            <div class="slide-text">
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+            </div>
+            <div class="slide-text">
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+                <img src="./assets/Vava Academy [V].svg" alt="">
+                <p>ACADEMY</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>PERGUNTAS FREQUENTES SOBRE O <span>VAVA ACADEMY</span></h2>
+                    <p>Mais dúvidas? Chama no Zap 👇😎</p>
+                    <a href="#"><button>FALE CONOSCO!</button></a>
+                </header>
+                
+                <div class="faq">
+                    <details>
+                    <summary>
+                        O curso tem acompanhamento prático?
+                        <ion-icon name="close-outline"></ion-icon>
+                    </summary>
+                        <p>Claroow, não é atoa que você tem um Radiante particular para te acompanhar no curso dependendo do seu plano, ele além de te acompanhar no jogo, irá montar rotinas insanas de treino para você otimizar ao máximo sua evolução!</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Vocês possuem campeonatos? 
+                            <ion-icon name="close-outline"></ion-icon>
+                        </summary>
+                        <p> Sim! E mais, em qualquer campeonato ou disputa aqui no Vavá Academy é VOCÊ quem escolhe as premiações, então você pode disputar um campeonato de X1 valendo desde um (pastel e um caldo de cana) a uma premiação real em dinheiro. 😎</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            A comunidade de alunos é ativa?
+                            <ion-icon name="close-outline"></ion-icon>
+                        </summary>
+                        <p>Hahaha, tem gente no discord que vira à noite jogando, deu 08:00 a.m e os malucos estão dando a vida na ranked 😳 Sem contar que você só pode entrar no Vavá Academy se tiver o senso de humor no mínimo, duvidoso! Se o que a galera fala no discord vazasse no Twitter... ☠️☠️</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            E se eu não gostar?
+                            <ion-icon name="close-outline"></ion-icon>
+                        </summary>
+                        <p>Se em até 7 dias, você não gostar do Vavá Academy, basta enviar uma mensagem para o nosso suporte do Zap pedindo para cancelar sua assinatura que cancelamos na mesma hora!</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Sou iniciante, o curso pode me ajudar?
+                            <ion-icon name="close-outline"></ion-icon>
+                        </summary>
+                        <p>Com toda certeza, nossa metodologia foi feita pensando em todos os elos e em todos os níveis de jogo, com nossa ajuda você irá evoluir muito mais rápidooo!</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/Vava Academy [letreiro].png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#sobre">O que você vai aprender</a></p>
+                    <p><a href="#services">FeedBacks</a></p>
+                    <p><a href="#suporte">Planos</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Suporte</h3>
+                    <p>contato@vavaacademy.com</p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+
+                        <a target="_blank" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+
+                        <a target="_blank" href=""><ion-icon name="logo-twitter"></ion-icon></a>
+
+                        <a target="_blank" href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© 2024 Vava Academy. Todos os direitos reservados.</p>
+
+                <p class="ocult">A Vava Academy é como uma semente mágica que se transforma em uma árvore frutífera de habilidades, produzindo as conquistas mais doces de destreza no Valorant. É um farol de esperança que ilumina as possibilidades de se tornar um mestre no jogo, onde todos têm o poder de aprender e contribuir para o crescimento de sua habilidade no Valorant.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

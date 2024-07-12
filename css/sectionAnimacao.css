@@ -1,0 +1,97 @@
+#animacao {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-black);
+}
+
+#animacao video {
+    width: 130%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    mask-image: linear-gradient(to bottom, #fff, transparent 70%);
+}
+
+#animacao .text {
+    position: relative;
+    z-index: 2;
+    margin-top: 40%;
+}
+
+#animacao h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#animacao h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#animacao p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #fff 0%, #9a9a9a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+}
+
+#animacao a button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+
+    background: var(--gradient);
+    color: var(--color-text);
+    animation: gradient 3s ease infinite;
+    background-size: 150% 150%;
+
+    transition: all 200ms ease-in-out;
+}
+
+#animacao a button:hover {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: gradient 2s ease infinite;
+    background-size: 200% 200%;  
+    filter: brightness(1.1);
+}
+
+
+@media (min-width: 1080px) {
+    section#animacao {
+        min-height: 100vh;
+    }
+
+    section#animacao video {
+        width: 100%;
+    }
+
+    section#animacao .text {
+        position: absolute;
+        left: 50%;
+        bottom: 5rem;
+        transform: translate(-50%, 0);
+    }
+
+    section#animacao h2 {
+        font-size: 6rem;
+    }
+
+    section#animacao p {
+        font-size: 2rem;
+    }
+
+    section#animacao a button {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,181 @@
+#depoimentos {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-black);
+}
+
+#depoimentos header h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#depoimentos header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#depoimentos header p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #fff 0%, #9a9a9a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+}
+
+#depoimentos .cards {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#depoimentos .cards .card {
+    position: relative;
+    user-select: none;
+}
+
+#depoimentos .cards .card img.agente {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 11/16;
+    object-fit: cover;
+    border-radius: 1rem;
+
+    filter: brightness(.6);
+}
+
+#depoimentos .cards .card .head {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#depoimentos .cards .card .head img.perfil {
+    width: 4rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#depoimentos .cards .card .head h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+#depoimentos .cards .card .head p {
+    color: #dfdfdf;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+#depoimentos .cards .card .text {
+    position: absolute;
+    bottom: 3rem;
+    padding-inline: 2rem;
+}
+
+#depoimentos .cards .card .text h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#depoimentos .cards .card .text p {
+    color: #b8b8b8;
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    margin-bottom: 2rem;
+}
+
+#depoimentos .cards .card .text .rank {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#depoimentos .cards .card .text .rank img {
+    width: 5rem;
+
+    animation: rank infinite 2.5s ease-in-out;
+}
+
+#depoimentos .cards .card .text .rank img:nth-child(1) {
+    animation-delay: 1000ms;
+}
+
+@keyframes rank {
+    50% {
+        transform: translateY(-5px);
+        filter: drop-shadow(2px 2px 10px #ffffff88);
+    }
+}
+
+#depoimentos .cards .card .text .rank ion-icon {
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (min-width: 1080px) {
+
+    section#depoimentos header h2 {
+        font-size: 4.5rem;
+    }
+
+    section#depoimentos header p {
+        margin-bottom: 8rem;
+        font-size: 2rem;
+    }
+
+    section#depoimentos .content .cards {
+        overflow: initial;
+        border-radius: 0;
+    }
+
+    section#depoimentos .wrapper.carrossel {
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    section#depoimentos .cards .card .text {
+        padding-inline: 4rem;
+    }
+
+    section#depoimentos .cards .card img.agente {
+        mask-image: linear-gradient(to bottom ,#fff, transparent );
+    }
+
+    section#depoimentos .swiper {
+        position: relative;
+    }
+
+    section#depoimentos .swiper:before,
+    section#depoimentos .swiper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 25rem;
+        height: 100%;
+        z-index: 2;
+    }
+    
+    section#depoimentos .swiper:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #080808);
+    }
+    
+    section#depoimentos .swiper:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #080808);
+    }
+}
