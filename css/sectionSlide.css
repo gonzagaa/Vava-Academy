@@ -11,6 +11,10 @@
   #slide {
     padding-block: 0;
   }
+
+  #slide.um {
+    margin-top: -10rem;
+  }
   
   #slide .slide {
     overflow: hidden;
@@ -27,7 +31,7 @@
     content: '';
     position: absolute;
     top: 0;
-    width: 25rem;
+    width: 10rem;
     height: 100%;
     z-index: 2;
   }
@@ -81,5 +85,12 @@
   }
 
 @media (min-width: 1080px) {
-   
+  #slide .slide:before,
+  #slide .slide:after {
+    width: 25rem;
+  }
+
+  #slide.um {
+    margin-top: 0;
+  }
 }

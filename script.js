@@ -1,23 +1,3 @@
-const cursorDot = document.querySelector("[data-cursor-dot]");
-const cursorOutline = document.querySelector("[data-cursor-outline]");
-
-window.addEventListener('mousemove', function (e) {
-
-  const posX = e.clientX;
-  const posY = e.clientY;
-
-  cursorDot.style.left = `${posX}px`
-  cursorDot.style.top = `${posY}px`
-
-  cursorOutline.style.left = `${posX}px`
-  cursorOutline.style.top = `${posY}px`
-
-  cursorOutline.animate({
-    left: `${posX}px`,
-    top: `${posY}px`
-  }, {duration: 500, fill: "forwards"});
-})
-
 
 window.addEventListener('scroll', onScroll)
 
@@ -43,25 +23,25 @@ function closeMenu() {
 }
 
  //smoothscroll
-//  const body = document.body,
-//  scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-//  height = scrollWrap.getBoundingClientRect().height - 1,
-//  speed = 0.04;
+ const body = document.body,
+  scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+  height = scrollWrap.getBoundingClientRect().height - 1,
+  speed = 0.04;
 
-//  var offset = 0;
+  var offset = 0;
 
-//  body.style.height = Math.floor(height) + "px";
+  body.style.height = Math.floor(height) + "px";
 
-//  function smoothScroll() {
-//  offset += (window.pageYOffset - offset) * speed;
+  function smoothScroll() {
+ offset += (window.pageYOffset - offset) * speed;
 
-//  var scroll = "translateY(-" + offset + "px) translateZ(0)";
-//  scrollWrap.style.transform = scroll;
+ var scroll = "translateY(-" + offset + "px) translateZ(0)";
+scrollWrap.style.transform = scroll;
 
-//  callScroll = requestAnimationFrame(smoothScroll);
-// }
+ callScroll = requestAnimationFrame(smoothScroll);
+}
 
-//  smoothScroll();
+ smoothScroll();
 
 
 
@@ -100,3 +80,4 @@ if (larguraDaTela < 800) {
       });
 }
   
+document.getElementById('vid').play();

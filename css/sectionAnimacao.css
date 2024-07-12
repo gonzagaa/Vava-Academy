@@ -11,6 +11,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     mask-image: linear-gradient(to bottom, #fff, transparent 70%);
+    filter: saturate(120%);
 }
 
 #animacao .text {
@@ -70,10 +71,25 @@
 @media (min-width: 1080px) {
     section#animacao {
         min-height: 100vh;
+        padding-block: 0;
     }
 
     section#animacao video {
         width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        mask-image: none;
+    }
+
+    section#animacao::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 55rem;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(to bottom, rgba(255, 10, 10, 0), #080808);
     }
 
     section#animacao .text {

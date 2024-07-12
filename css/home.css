@@ -10,6 +10,7 @@
     flex-direction: column;
 
     transition: all 200ms ease-in-out;
+
   }
 
   #home .wrapper {
@@ -94,6 +95,8 @@
     line-height: 1.3;
     font-size: 4rem;
     margin-bottom: 2rem;
+
+    line-height: 1;
   }
   
   #home h1 span {
@@ -119,8 +122,8 @@
 
   #home p {
     font-size: 1.8rem;
-    font-weight: 500;
-    background: linear-gradient(to bottom, #fff 0%, #9a9a9a 100%);
+    font-weight: 600;
+    background: linear-gradient(to bottom, #fff 0%, #b3b3b3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -230,6 +233,8 @@
         mix-blend-mode: difference;
     
         margin-bottom: 3rem;
+
+        line-height: initial;
       }
     
       header#home .content p {
