@@ -9,6 +9,26 @@
     z-index: 10;
 }
 
+#plano header h2 {
+    margin-bottom: 1rem;
+}
+
+#plano header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#plano header p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #fff 0%, #9a9a9a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+}
+
 #plano video {
     width: 100%;
     border-radius: 2rem;
@@ -20,13 +40,6 @@
     font-size: 3.5rem;
     margin-bottom: 2rem;
     font-family: "Space Grotesk", sans-serif;
-}
-
-#plano h2 span {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
 }
 
 #plano .topics {
@@ -127,6 +140,10 @@
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         align-items: center;
+    }
+    
+    section#plano header p {
+        margin-bottom: 8rem;
     }
 
     section#plano video {
