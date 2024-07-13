@@ -13,13 +13,14 @@
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
 }
 
 #faq header h2 span {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 #faq .content header p {
@@ -70,7 +71,7 @@
 
 #faq summary {
     color: #fffffffe;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 2rem;
 
     background: linear-gradient(45deg,  #ff590034 0%, #ff7b0013 100%);

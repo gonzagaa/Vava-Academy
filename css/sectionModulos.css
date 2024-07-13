@@ -78,13 +78,14 @@
     font-size: 3.5rem;
     margin-bottom: 4rem;
     font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
 }
 
 #modulos .content h2 span {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 #modulos .content .cards {

@@ -36,7 +36,7 @@
 
 #animacao p {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 400;
     background: linear-gradient(to bottom, #fff 0%, #9a9a9a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

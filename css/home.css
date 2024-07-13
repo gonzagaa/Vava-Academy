@@ -103,7 +103,7 @@
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    font-weight: 900;
     animation: gradient 2s ease infinite;
     background-size: 200% 200%;
   }
@@ -122,7 +122,7 @@
 
   #home p {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     background: linear-gradient(to bottom, #fff 0%, #b3b3b3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -233,8 +233,10 @@
         mix-blend-mode: difference;
     
         margin-bottom: 3rem;
+      }
 
-        line-height: initial;
+      header#home .content h1 span {
+        font-weight: 700;
       }
     
       header#home .content p {

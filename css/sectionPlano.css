@@ -11,13 +11,14 @@
 
 #plano header h2 {
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 #plano header h2 span {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 #plano header p {
@@ -40,6 +41,7 @@
     font-size: 3.5rem;
     margin-bottom: 2rem;
     font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
 }
 
 #plano .topics {
@@ -79,14 +81,14 @@
     background: linear-gradient(to bottom, #ececec 0%, #9a9a9a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 #plano .price p span {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 #plano .price h3 {
