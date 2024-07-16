@@ -30,6 +30,7 @@
     --orange-black: #0F0500;
     --gradient: linear-gradient(45deg, #FFA900 0%, #FF5900 100%);
     --bg-black: #080808;
+    --bg-black: linear-gradient(45deg, #0e0e0e 0%, #1a1a1a 100%);
 
     --nav-height: 7.2rem;
 
@@ -46,11 +47,12 @@ html {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: var(--black-900);
+    background-color: #161616;
   }
 
   body {
-    background-color: #000000;
+    background-color: #161616;
+    overflow-x: hidden;
   }
 
   ul {

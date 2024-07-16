@@ -2,6 +2,8 @@
     position: relative;
     overflow: hidden;
     background: var(--bg-black);
+
+    padding-top: 15rem;
 }
 
 #video .wrapper {

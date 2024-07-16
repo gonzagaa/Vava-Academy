@@ -1,7 +1,7 @@
 #plano {
     position: relative;
     overflow: hidden;
-    background: var(--orange-black);
+    background: var(--bg-black);
 }
 
 #plano .wrapper {

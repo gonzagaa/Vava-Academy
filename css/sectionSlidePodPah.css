@@ -1,0 +1,152 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  #slide {
+    padding-block: 0;
+
+    position: relative;
+  }
+
+  #slide .slide-content {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  #slide .slide-content.one {
+    transform: rotate(4deg);
+
+    filter: blur(4px);
+    opacity: .9;
+  }
+
+  #slide .slide-content.two {
+    transform: rotate(-4deg);
+    margin-top: -16rem;
+
+    box-shadow: -10px -10px 50px #0000004d;
+  }
+  
+  #slide .slide {
+    overflow: hidden;
+    padding: 2rem 0;
+
+    display: flex;
+    white-space: nowrap;
+  
+    position: relative;
+  }
+
+  #slide .slide.um {
+    background: var(--gradient);
+  }
+
+  #slide .slide.dois {
+    background: #0e0e0e;
+
+    border-top: 2px solid #c97c00;
+    border-bottom: 2px solid #d68400;
+  }
+  
+  #slide .slide:before,
+  #slide .slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  #slide .slide:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #cb911d);
+  }
+
+  #slide .slide.dois:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #000000);
+  }
+  
+  #slide .slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #c38d22);
+  }
+  
+  #slide .slide:hover .slide-text {
+    animation-play-state: paused;
+  }
+  
+  #slide .slide-text {
+    animation: slide 40s infinite linear;
+    display: flex;
+    align-items: center;
+  }
+  
+  #slide .slide-text p {
+    font-family: var(--Alternate);
+    font-size: 1.2rem;
+    margin: 0 3rem;
+    font-family: var(--RebondBold);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    position: relative;
+  }
+
+  #slide .slide-text ion-icon {
+    color: #000000;
+    font-size: 2rem;
+    margin: 0 2rem;
+    font-weight: 900;
+    position: relative;
+  }
+
+  #slide .slide img {
+    width: 3rem;
+  }
+  
+  #slide .slide-text p:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #2d2d2d;
+    top: 40%;
+    left: -3.5rem;
+  }
+
+@media (min-width: 1080px) {
+  #slide .slide:before,
+  #slide .slide:after {
+    width: 25rem;
+  }
+
+  #slide.um {
+    margin-top: 0;
+  }
+
+  #slide .slide-text p {
+    font-size: 1.4rem;
+    margin: 0 5rem;
+  }
+
+  #slide .slide-text ion-icon {
+    font-size: 3rem;
+    margin: 0 2rem;
+  }
+
+  #slide .slide img {
+    width: 4rem;
+  }
+}

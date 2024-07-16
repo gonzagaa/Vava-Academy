@@ -278,8 +278,7 @@ body.menu-expanded button path {
       color: #111111;
       background: var(--gradient);
       border-radius: .5rem;
-      padding: 1rem 2rem;
-      height: var(--nav-height);
+      padding: 1.5rem 2rem;
 
       transition: all 300ms ease-in-out;
       font-weight: 700;

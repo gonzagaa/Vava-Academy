@@ -52,12 +52,12 @@
 
 #modulos:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #080808);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #0e0e0e);
 }
   
 #modulos:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #080808);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #0e0e0e);
 }
 
 #modulos .wrapper {
@@ -206,14 +206,14 @@
     
     section#modulos .slide-content:before {
         top: 0;
-        background: linear-gradient(to top, rgba(255, 255, 255, 0), #080808);
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), #161616);
         left: 0;
     }
     
     section#modulos .slide-content:after {
         top: initial;
         bottom: 0;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #080808);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #161616);
         left: 0;
     }
 
