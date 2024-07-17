@@ -231,12 +231,12 @@
     }
 
     section#modulos .content h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     section#modulos .content p {
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     section#modulos .content .cards {
@@ -294,6 +294,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
+        padding: 2rem;
 
         background: rgba(45, 45, 45, 0.32);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -302,6 +303,25 @@
         border: 2px solid rgba(46, 46, 46, 0.3);
     }
 
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+
+    section#modulos .wrapper .content .card-container {
+        padding: 2rem;
+    }
+
+    section#modulos .content h3 {
+        font-size: 2.5rem;
+    }
+
+    section#modulos .content p {
+        width: 80%;
+        font-size: 1.8rem;
+    }
 }
 
 @keyframes slideDesktop {

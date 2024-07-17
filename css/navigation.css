@@ -227,7 +227,7 @@ body.menu-expanded button path {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 70%;
+      width: 81%;
     }
   
     nav#navigation .menu ul:nth-child(1) {
@@ -371,6 +371,10 @@ body.menu-expanded button path {
   @media (min-width: 1700px) {
     .wrapper {
       width: min(150rem, 100%);
+    }
+
+    nav#navigation .menu {
+      width: 70%;
     }
   }
 

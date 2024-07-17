@@ -211,7 +211,7 @@
 
     header#home .image video.desktop {
       display: inherit;
-    width: 100%;
+      width: 100%;
     }
 
     header#home .content {
@@ -239,10 +239,9 @@
       }
     
       header#home .content h1 {
-        font-size: 8rem;
         line-height: 1;
         mix-blend-mode: difference;
-    
+        font-size: 6rem;
         margin-bottom: 5rem;
       }
 
@@ -283,6 +282,10 @@
 @media (min-width: 1400px) {
   .wrapper {
     width: min(140rem, 100%);
+  }
+
+  header#home .content h1 {
+    font-size: 8rem;
   }
 }
 
