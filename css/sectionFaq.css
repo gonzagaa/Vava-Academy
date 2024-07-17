@@ -36,7 +36,7 @@
     font-weight: 600;
 
     background: var(--gradient);
-    color: var(--color-text);
+    color: #000;
     animation: gradient 3s ease infinite;
     background-size: 150% 150%;
 
@@ -45,6 +45,8 @@
     margin-top: 3rem;
 
     margin-bottom: 2rem;
+
+    font-family: "Space Grotesk", sans-serif;
 }
 
 #faq a button:hover {
@@ -169,5 +171,6 @@ summary::-webkit-details-marker {
     section#faq a button {
         margin-bottom: 0;
         font-size: 2.5rem;
+        padding: 1.5rem 3rem;
     }
 }

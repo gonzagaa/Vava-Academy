@@ -8,10 +8,21 @@
     position: relative;
 }
 
+#videoDois img.background {
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: .02;
+}
+
 #videoDois .blush {
     width: 500px;
     height: 500px;
-    background: radial-gradient(#B34101, transparent 50%);
+    background: radial-gradient(#848281, transparent 50%);
     border-radius: 50%;
     position: absolute;
     z-index: 0;
@@ -23,7 +34,7 @@
 }
 
 #videoDois .blush.dois {
-  background: radial-gradient(#B34101, transparent 50%);
+  background: radial-gradient(#848281, transparent 50%);
   top: initial;
   left: initial;
   bottom: -10rem;
@@ -32,6 +43,16 @@
 
 #videoDois .div-video {
     z-index: 10;
+}
+
+#videoDois .div-video img.grafite {
+    position: absolute;
+    width: 140%;
+    top: 50%;
+    opacity: .5;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 #videoDois iframe {

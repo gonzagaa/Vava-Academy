@@ -1,12 +1,33 @@
 #plano {
     position: relative;
-    overflow: hidden;
     background: var(--bg-black);
 }
 
 #plano .wrapper {
     position: relative;
     z-index: 10;
+}
+
+#plano img.grafite.um {
+    position: absolute;
+    left: -5rem;
+    top: 14rem;
+    width: 20rem;
+
+    filter: blur(4px);
+    opacity: .5;
+}
+
+#plano header img.grafite {
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translate(-50%, 0);
+    width: 17rem;
+}
+
+#plano header {
+    position: relative;
 }
 
 #plano header h2 {
@@ -42,6 +63,16 @@
     margin-bottom: 2rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
+}
+
+#plano h2.plano {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#plano h2.plano img {
+    width: 9rem;
 }
 
 #plano .topics {
@@ -81,7 +112,7 @@
     background: linear-gradient(to bottom, #ececec 0%, #9a9a9a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #plano .price p span {
@@ -119,13 +150,15 @@
     font-weight: 600;
 
     background: var(--gradient);
-    color: var(--color-text);
+    color: #000;
     animation: gradient 3s ease infinite;
     background-size: 150% 150%;
 
     transition: all 200ms ease-in-out;
 
     margin-top: 3rem;
+
+    font-family: "Space Grotesk", sans-serif;
 }
 
 #plano a button:hover {
@@ -142,6 +175,13 @@
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         align-items: center;
+    }
+
+    section#plano img.grafite.um {
+        position: absolute;
+        left: -25rem;
+        top: -14rem;
+        width: 45rem;
     }
     
     section#plano header p {
@@ -165,6 +205,14 @@
         font-size: 5rem;
     }
 
+    section#plano h2.plano {
+        gap: 1.5rem;
+    }
+
+    section#plano h2.plano img {
+        width: 12rem;
+    }
+
     section#plano .topics {
         gap: 1.5rem;
     }
@@ -176,5 +224,6 @@
 
     section#plano .content a button {
         font-size: 2.5rem;
+        padding: 1.5rem 3rem;
     }
 }

@@ -51,11 +51,13 @@
     font-weight: 600;
 
     background: var(--gradient);
-    color: var(--color-text);
+    color: #000;
     animation: gradient 3s ease infinite;
     background-size: 150% 150%;
 
     transition: all 200ms ease-in-out;
+
+    font-family: "Space Grotesk", sans-serif;
 }
 
 #animacao a button:hover {

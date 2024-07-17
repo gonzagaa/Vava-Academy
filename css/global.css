@@ -21,6 +21,11 @@
   src: url(../fonts/Korataki\ Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Grafite';
+  src: url(../fonts/Tobec___.ttf);
+}
+
 :root {
     font-size: 62.5%;
 
@@ -30,12 +35,13 @@
     --orange-black: #0F0500;
     --gradient: linear-gradient(45deg, #FFA900 0%, #FF5900 100%);
     --bg-black: #080808;
-    --bg-black: linear-gradient(45deg, #0e0e0e 0%, #1a1a1a 100%);
+    --bg-black: linear-gradient(45deg, #181819 0%, #1F1F20 100%);
 
     --nav-height: 7.2rem;
 
     --interV: 'interV';
     --Space: "Space Grotesk";
+    --Grafite: "Grafite"
 }  
 
 html {
@@ -53,6 +59,7 @@ html {
   body {
     background-color: #161616;
     overflow-x: hidden;
+
   }
 
   ul {

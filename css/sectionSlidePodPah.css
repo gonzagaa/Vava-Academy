@@ -31,7 +31,7 @@
 
   #slide .slide-content.two {
     transform: rotate(-4deg);
-    margin-top: -16rem;
+    margin-top: -15rem;
 
     box-shadow: -10px -10px 50px #0000004d;
   }
@@ -93,14 +93,12 @@
   }
   
   #slide .slide-text p {
-    font-family: var(--Alternate);
-    font-size: 1.2rem;
+    font-family: var(--Grafite);
+    font-size: 1.8rem;
     margin: 0 3rem;
-    font-family: var(--RebondBold);
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 700;
     position: relative;
   }
 
@@ -137,7 +135,7 @@
   }
 
   #slide .slide-text p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin: 0 5rem;
   }
 

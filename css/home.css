@@ -151,11 +151,13 @@
   border-radius: .5rem;
   border: none;
   font-weight: 600;
+
+  font-family: "Space Grotesk", sans-serif;
 }
 
 #home .buttons a:nth-child(1) button {
   background: var(--gradient);
-  color: var(--color-text);
+  color: #000;
   outline: 1px solid var(--primary-color);
   animation: gradient 3s ease infinite;
   background-size: 150% 150%;

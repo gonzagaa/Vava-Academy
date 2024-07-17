@@ -100,7 +100,7 @@
 #modulos .blush {
     width: 500px;
     height: 500px;
-    background: radial-gradient(#B34101, transparent 50%);
+    background: radial-gradient(#b2b2b2, transparent 50%);
     border-radius: 50%;
     position: absolute;
     z-index: -1;
@@ -116,9 +116,6 @@
     padding: 2rem;
     border-radius: 2rem;
     width: 100%;
-
-    box-shadow:  10px 10px 19px #0a0013,
-             -10px -10px 19px #0e0019;
 
     background: rgba(45, 45, 45, 0.127);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -163,6 +160,7 @@
 
     section#modulos .slide img {
         width: 70%;
+        border-radius: 3rem;
     }
 
     section#modulos .wrapper {
@@ -184,14 +182,14 @@
     section#modulos .slide.um {
         align-items: start;
         animation: slideDesktop 40s infinite linear;
-        mask-image: linear-gradient(to right ,#fff, transparent 65%);
+        mask-image: linear-gradient(to right ,#fff, transparent 75%);
     }
 
     section#modulos .slide.dois {
         align-items: end;
 
         animation: slideDesktopInvert 40s infinite linear;
-        mask-image: linear-gradient(to left ,#fff, transparent 65%);
+        mask-image: linear-gradient(to left ,#fff, transparent 75%);
     }
 
     section#modulos .slide-content:before,
@@ -206,14 +204,14 @@
     
     section#modulos .slide-content:before {
         top: 0;
-        background: linear-gradient(to top, rgba(255, 255, 255, 0), #161616);
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), #1b1b1b);
         left: 0;
     }
     
     section#modulos .slide-content:after {
         top: initial;
         bottom: 0;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #161616);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #1b1b1b);
         left: 0;
     }
 
@@ -256,7 +254,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     section#modulos .content img.icone {
@@ -292,11 +289,17 @@
         mask-image: linear-gradient(to left ,#fff, transparent 85%);
     }
 
-    section#modulos .content .card-container {
+    section#modulos .wrapper .content .card-container {
         position: relative;
         height: 100%;
         display: flex;
         justify-content: center;
+
+        background: rgba(45, 45, 45, 0.32);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 2px solid rgba(46, 46, 46, 0.3);
     }
 
 }
