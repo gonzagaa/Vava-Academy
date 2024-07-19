@@ -1,13 +1,14 @@
 
 let elem_preloader = document.getElementById("preloader");
-let video_loader = document.getElementById("preloader-video");
+let body = document.getElementById("body");
 console.log("Testing... Ok");
 
+body.classList.add('no-scroll');
 
   setTimeout(function() {
     elem_preloader.classList.remove("preloader");
-    video_loader.classList.remove("preloader-video")
-  }, 4280);
+    body.classList.remove("no-scroll");
+  }, 5280);
 
 window.addEventListener('scroll', onScroll)
 

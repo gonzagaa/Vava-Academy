@@ -61,6 +61,12 @@ html {
     overflow-x: hidden !important;
   }
 
+  .no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
   ul {
     list-style: none;
   }
