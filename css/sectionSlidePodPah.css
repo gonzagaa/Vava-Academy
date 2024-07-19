@@ -11,6 +11,8 @@
   #slide {
     padding-block: 0;
     position: relative;
+
+    margin-top: -5rem;
   }
 
   #slide .slide-content {
@@ -19,6 +21,7 @@
     top: 0;
     left: 0;
     z-index: 10;
+    max-width: 100%;    
   }
 
   #slide .slide-content.one {
@@ -30,7 +33,7 @@
 
   #slide .slide-content.two {
     transform: rotate(-4deg);
-    margin-top: -15rem;
+    margin-top: -1rem;
 
     box-shadow: -10px -10px 50px #0000004d;
   }
@@ -43,6 +46,10 @@
     white-space: nowrap;
   
     position: relative;
+  }
+
+  #slide .slide .slide-text {
+    overflow: hidden;
   }
 
   #slide .slide.um {
@@ -78,15 +85,16 @@
   
   #slide .slide:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #c38d22);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #000000);
   }
+
   
   #slide .slide:hover .slide-text {
     animation-play-state: paused;
   }
   
   #slide .slide-text {
-    animation: slide 40s infinite linear;
+    animation: slide 10s infinite linear;
     display: flex;
     align-items: center;
   }
@@ -129,6 +137,16 @@
     width: 25rem;
   }
 
+  #slide .slide-content,
+  #slide .slide-content.um,
+  #slide .slide-content.dois {
+    max-width: none;
+  }
+
+  #slide .slide-content.two {
+    margin-top: -17.3rem;
+  }
+
   #slide.um {
     margin-top: 0;
   }
@@ -145,5 +163,9 @@
 
   #slide .slide img {
     width: 4rem;
+  }
+
+  section#slide .slide-text {
+    animation: slide 50s infinite linear;
   }
 }
