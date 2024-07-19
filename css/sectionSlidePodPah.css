@@ -14,7 +14,7 @@
   }
 
   #slide .slide-content {
-    overflow: hidden;
+    overflow: hidden !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@
   }
   
   #slide .slide {
-    overflow: hidden;
+    overflow: hidden !important;
     padding: 2rem 0;
 
     display: flex;
