@@ -112,7 +112,7 @@
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
+    font-weight: 700;
     animation: gradient 2s ease infinite;
     background-size: 200% 200%;
   }
