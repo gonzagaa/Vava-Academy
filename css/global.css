@@ -58,7 +58,7 @@ html {
 
   body {
     background-color: #161616;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   ul {
