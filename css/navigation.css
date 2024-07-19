@@ -15,7 +15,7 @@ nav {
   border: 3px solid rgba(63, 63, 63, 0.125);
 
   width: 100vw;
-  z-index: 100;
+  z-index: 30;
   transition: all 300ms ease-in-out;
 }
 
