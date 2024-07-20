@@ -26,6 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    animation: spinz 5.15s linear infinite;
 }
 
 #preloader .text img {
