@@ -10,8 +10,8 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    mask-image: linear-gradient(to bottom, #fff, transparent 70%);
-    filter: saturate(120%);
+    mask-image: linear-gradient(to bottom, #fff, transparent 90%);
+    filter: saturate(170%);
 }
 
 #animacao .text {
@@ -81,6 +81,7 @@
         object-fit: cover;
         aspect-ratio: 16/10;
         mask-image: none;
+        filter: saturate(120%);
     }
 
     section#animacao::before {
