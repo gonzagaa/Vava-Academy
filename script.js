@@ -1,7 +1,6 @@
 
 let elem_preloader = document.getElementById("preloader");
 let body = document.getElementById("body");
-console.log("Testing... Ok");
 
 body.classList.add('no-scroll');
 

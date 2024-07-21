@@ -1,7 +1,18 @@
 #faq {
     position: relative;
-    background: var(--orange-black);
+    background: var(--bg-black);
     z-index: 11;
+}
+
+#faq img.background {
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: .02;
 }
 
 #faq .content header {
@@ -76,7 +87,7 @@
     font-weight: 300;
     font-size: 2rem;
 
-    background: linear-gradient(45deg,  #ff590034 0%, #ff7b0013 100%);
+    background: linear-gradient(45deg,  #4e4e4e51 0%, #91919138 100%);
 
     display: flex;
     text-align: left;
@@ -84,24 +95,25 @@
     align-items: center;
     padding: 2.5rem;
     width: 100%;
-
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 2rem;
 
-    border: 2px solid #391a015a;
+    border: 2px solid #5757575a;
 
     transition: all 200ms ease-in-out;
 }
 
 #faq summary:hover {
     cursor: pointer;
-    border: 2px solid #853d0293;
+    border: 2px solid #ababab93;
 }
 
 #faq details[open] summary {
     border-radius: 2rem 2rem 0 0;
-    background: linear-gradient(45deg, #FFA900 0%, #FF5900 100%);
+    background: linear-gradient(45deg,  #4e4e4eab 0%, #91919165 100%);
 
-    border: 2px solid #39006487;
+    border: 2px solid #ababab93;
     border-bottom: 0;
 }
 
@@ -128,7 +140,7 @@ summary::-webkit-details-marker {
 }
 
 #faq details p {
-    background: linear-gradient(45deg,  #ff590020 0%, #ff7b0013 100%);
+    background: linear-gradient(45deg,#91919138  0%, #4e4e4e51 100%);
 
 
     font-size: 1.8rem;
@@ -138,7 +150,7 @@ summary::-webkit-details-marker {
     padding-right: 10%;
     text-align: left;
     font-weight: 200;
-    border: 2px solid #853d0293;
+    border: 2px solid #ababab93;
 
     border-top: 0;
 

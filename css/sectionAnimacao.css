@@ -72,14 +72,14 @@
 
 @media (min-width: 1080px) {
     section#animacao {
-        min-height: 110vh;
+        min-height: 130vh;
         padding-block: 0;
     }
 
-    section#animacao video {
+    section#animacao .video video {
         width: 100%;
+        height: 100%;
         object-fit: cover;
-        aspect-ratio: 16/10;
         mask-image: none;
         filter: saturate(120%);
     }
@@ -89,11 +89,21 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 55rem;
+        height: 35rem;
         left: 0;
         z-index: 2;
-        background: linear-gradient(to bottom, rgba(255, 10, 10, 0), #000000a4);
+        background: linear-gradient(to bottom, rgba(255, 0, 0, 0), #181819);
+    }
 
+    section#animacao::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 35rem;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(to top, rgba(255, 0, 0, 0), #181819);
     }
 
     section#animacao .text {
@@ -105,6 +115,8 @@
 
     section#animacao h2 {
         font-size: 6rem;
+
+        text-shadow: 1px 0px 30px rgba(0, 0, 0, 0.367);
     }
 
     section#animacao p {

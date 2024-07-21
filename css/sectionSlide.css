@@ -38,16 +38,12 @@
   
   #slider .slide:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #080808);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #141414);
   }
   
   #slider .slide:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #080808);
-  }
-  
-  #slider .slide:hover .slide-text {
-    animation-play-state: paused;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #141414);
   }
   
   #slider .slide-text {

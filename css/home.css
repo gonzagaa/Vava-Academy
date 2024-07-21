@@ -153,6 +153,8 @@
   font-weight: 600;
 
   font-family: "Space Grotesk", sans-serif;
+
+  transition: all 200ms ease-in-out;
 }
 
 #home .buttons a:nth-child(1) button {
@@ -169,6 +171,16 @@
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   outline: 1px solid var(--color-text);
   color: var(--color-text);
+}
+
+#home .buttons a:nth-child(1) button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+#home .buttons a:nth-child(2) button:hover {
+  background: #ffffff2b;
+  cursor: pointer;
 }
 
 #home .image video.mobile {

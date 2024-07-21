@@ -49,7 +49,6 @@
   }
 
   #slide .slide .slide-text {
-    overflow: hidden;
   }
 
   #slide .slide.um {
@@ -87,14 +86,9 @@
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #000000);
   }
-
-  
-  #slide .slide:hover .slide-text {
-    animation-play-state: paused;
-  }
   
   #slide .slide-text {
-    animation: slide 10s infinite linear;
+    animation: slide 40s infinite linear;
     display: flex;
     align-items: center;
   }
@@ -124,11 +118,11 @@
   #slide .slide-text p:after {
     content: '';
     position: absolute;
-    width: 20px;
+    width: 10px;
     height: 2px;
     background-color: #2d2d2d;
     top: 40%;
-    left: -3.5rem;
+    left: -2rem;
   }
 
 @media (min-width: 1080px) {
@@ -154,6 +148,12 @@
   #slide .slide-text p {
     font-size: 1.8rem;
     margin: 0 5rem;
+  }
+
+  #slide .slide-text p:after {
+    width: 20px;
+    height: 2px;
+    left: -3.5rem;
   }
 
   #slide .slide-text ion-icon {

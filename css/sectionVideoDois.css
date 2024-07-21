@@ -22,7 +22,7 @@
 #videoDois .blush {
     width: 500px;
     height: 500px;
-    background: radial-gradient(#848281, transparent 50%);
+    background: radial-gradient(#ff5a0776, transparent 50%);
     border-radius: 50%;
     position: absolute;
     z-index: 0;
@@ -34,7 +34,7 @@
 }
 
 #videoDois .blush.dois {
-  background: radial-gradient(#848281, transparent 50%);
+  background: radial-gradient(#ff5a0776, transparent 50%);
   top: initial;
   left: initial;
   bottom: -10rem;
