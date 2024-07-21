@@ -45,7 +45,15 @@
     <meta name="robots" content="index, follow" />
     <meta name="Author" content="Gustavo Gonzaga">
 </head>
-<body class="smooth-scroll-wrapper">
+<body id="body" class="smooth-scroll-wrapper">
+
+    <div class="preloader" id="preloader">
+        <img class="bg" src="../assets/preloadervava.webp" alt="">
+        <div class="text">
+            <img src="../assets/Vava Academy [letreiro].webp" alt="">
+            <div class="line-loading"></div>
+        </div>
+    </div> 
     
     <nav id="navigation" class="">
         <div class="wrapper">
@@ -66,10 +74,6 @@
                 <div class="buttons">
                     <a onclick="closeMenu()" class="button" href="https://login.vavaacademy.com/entrar&return=https%253A%252F%252Flogin.vavaacademy.com%252Fdashboard"><button>
                         LOG IN
-                    </button></a>
-
-                    <a onclick="closeMenu()" class="button" href="#plano"><button>
-                        COMEÇAR HOJE 
                     </button></a>
                 </div>
              </div>
@@ -186,7 +190,7 @@
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </div>
-        </div>
+            </div>
         </div>
 
         <div class="slide-content two">
@@ -582,7 +586,7 @@
     <section id="animacao">
         <div class="video">
             <video id="vid" class="desktop" autoplay muted loop playsinline>
-                <source src="../assets/Vava Academy vs Neverest.mp4">
+                <source src="../assets/Vava Academy vs Neverest (1).webm">
             </video>
         </div>
         <div class="wrapper">
@@ -617,8 +621,6 @@
            <div class="blush um"></div>
             <div class="blush dois"></div>
         </div>
-
-        <img class="background" src="../assets/V4 bw Grafite.webp" alt="">
     </section>
 
     <section id="plano">
@@ -768,6 +770,8 @@
                 </div>
             </div>
         </div>
+
+        <img class="background" src="../assets/V4 bw Grafite.webp" alt="">
     </section>
 
     <footer id="footer">
@@ -811,7 +815,6 @@
             </div>
         </div>
     </section>
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
