@@ -2,6 +2,7 @@
     position: relative;
     background: var(--bg-black);
     z-index: 11;
+    overflow: hidden;
 }
 
 #faq img.background {
