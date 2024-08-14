@@ -1,0 +1,139 @@
+#home {
+    background: var(--orange-black);
+    min-height: 100vh;
+    overflow: hidden;
+  
+    position: relative;
+  
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    transition: all 200ms ease-in-out;
+
+    padding-block: 6rem;
+  }
+
+  #home .wrapper {
+    height: 100%;
+  }
+
+  #home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  #home .wrapper {
+    position: relative;
+    z-index: 3;
+  }
+  
+  #home h1 {
+    color: var(--color-text);
+    font-weight: 900;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1.3;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+
+    line-height: 1;
+
+    position: relative;
+  }
+  
+  #home h1 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    animation: gradient 2s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#home .image video.mobile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  filter: brightness(.2) blur(2px);
+}
+
+#home .image video.desktop {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+    header#home {
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    header#home .image video.mobile {
+      display: none;
+    }
+
+    header#home .image video.desktop {
+      display: inherit;
+      width: 100%;
+    }
+    
+    header#home .content h1 {
+        line-height: 1;
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+      }
+
+      header#home .content h1 span {
+        font-weight: 700;
+      }
+
+      header#home .image video {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        filter: blur(2px) brightness(.2);
+      }
+}
+
+@media (min-width: 1400px) {
+  header#home {
+    justify-content: center;
+    min-height: 0;
+    max-height: 100vh;
+  }
+
+  header#home .content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1700px) {
+
+}
+
+@media (min-width: 2000px) {
+  header#home .circle {
+    top: 1080px;
+  }
+}

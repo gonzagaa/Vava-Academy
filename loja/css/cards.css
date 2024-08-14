@@ -1,0 +1,162 @@
+#home .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+#home .cards .card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.187);
+    width: 100%;
+
+    position: relative;
+}
+
+#home .cards .card .recomendado {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba(99, 99, 99, 0.2);
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 0;
+}
+
+#home .cards .card .recomendado p {
+    margin-top: 0;
+}
+
+#home .cards .card img {
+    width: 7rem;
+}
+
+#home .cards .card span {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    width: 100%;
+    text-align: end;
+    display: block;
+
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+#home .cards .card .price {
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+}
+
+#home .cards .card h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home .cards .card article {
+    width: 100%;
+    background: rgba(99, 99, 99, 0.081);
+    padding-block: 2.5rem;
+}
+
+#home .cards .card h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+#home .cards .card p {
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home .cards .card a button {
+    animation: gradient 2s ease infinite;
+    background-size: 200% 200%;
+    background: var(--gradient);
+
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    transition: all 300ms ease-in-out;
+}
+
+#home .cards .card a button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+    background-size: 400% 400%;
+}
+
+#home .termo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4rem;
+}
+
+#home .termo p {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+#home .termo p span.vava {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home .termo p span {
+    font-weight: 600;
+}
+
+#home .termo img {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1080px) {
+    header#home .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    header#home .cards .card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.187);
+    }
+
+    header#home .cards .card article {
+        background: rgba(99, 99, 99, 0.093);
+    }
+
+    header#home .cards .card a button {
+        padding: 1rem 3rem;
+        font-weight: 400;
+    }
+}
